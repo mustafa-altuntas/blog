@@ -18,5 +18,4 @@ Route::get('/','Front\HomepageController@index')->name('homepage');
 Route::get('sayfa','Front\HomepageController@index');
 Route::get('/kategori/{category}','Front\HomepageController@category')->name('category');
 Route::get('/{category}/{slug}','Front\HomepageController@single')->name('single');
-
-
+Route::get('/{slug}','Front\HomepageController@page')->name('page');
